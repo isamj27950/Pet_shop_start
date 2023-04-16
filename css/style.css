@@ -322,17 +322,20 @@ main #form .flex .text {
 }
 
 main #form img{
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    margin-right: 5rem;
-    
+padding-bottom:3rem;
+max-height: 100%;
+
 }
 main #form input{
     padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
 }
 
 main * span {
 color: #f00;
+}
+main #form button {
+    margin-bottom: 4rem;
 }
 
 /*footer*/
@@ -342,9 +345,11 @@ footer {
     text-align: center;
     height: 4rem;     
 }
-footer h3{
+footer h4{
     color: var(--clr-bg-wh);
     padding-top: 1rem;
+    font-size: small;
+    font-weight: 400;
     
 }
 @media(max-width:500px){ 
