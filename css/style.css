@@ -24,7 +24,8 @@ body{
 
 h1{
     text-transform: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--clr-bg-wh);
 }
 h2{
@@ -39,7 +40,7 @@ h3{
 
 p{
     text-transform: none;
-    font-size: .7rem;   
+    font-size: .9rem;   
 }
 button {
     text-transform: uppercase;
@@ -124,6 +125,8 @@ width: 100%;
 /*PAGE HOME*/
 main #home {
     background-image: url(../img/toutou-memere.jpg);
+    background-color: #69708e;
+    background-blend-mode:multiply ;
     background-position: center;
     background-size: cover;
     height:400px;
@@ -131,60 +134,71 @@ main #home {
 
 }
 main .content {
-    padding-top: 8rem;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 3rem 2rem 3rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin: 3rem;
+}
+#home h1 {
+    padding-top: 2rem;  
 }
 #home p {
+
     color: var(--clr-text-wh);
-    margin-top: 1rem;
+    padding-top: 1.5rem;
+    font-weight: 400;
+    
 }
 #home button {
-    margin-top: 1rem;
+    
     width: 10rem;
     height: 3rem;
 }
 
 /*news*/
 main #news{
-    background-color: var(--clr-bg-gr);  
-}
-main #news .container_news{
-    flex-direction: column;
-    margin-top: 1rem;
-
+    background-color: var(--clr-bg-gr);
+    width: 100%;
+    height: 100%;
 }
 
 main #news .flex{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
     width: 100%;
     justify-content:center;
     gap: 2rem;
-    margin: auto;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 main #news .flex .card {
     background-color: var(--clr-bg-wh);
     width:100%; 
+    margin-bottom: 1rem;
+    text-align: center;
+    margin: 1rem; 
+    padding: 1rem;
     
-
 }
-
 main #news .card img {
     width: 50px;
     height: 50px;
-display: inline-block;
-    
+    display: inline-block;
+    margin-top: 1rem;   
+}
+main #news .card h2 {
+    margin-bottom: 1rem;
+    font-size: small;
+}
+main #news .card p{
+    margin-bottom: 1rem;
+    font-size: small;
 }
 main #news hr {
-    background-color: crimson;
+    background-color:var(--clr-bg-btn);
     height:.3rem;
+    
     
 }
 /*Page About*/
