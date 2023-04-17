@@ -80,6 +80,9 @@ header div{
 header img{
     max-height: 50px;
 }
+header i {
+    font-size:1.5rem;
+}
 header i:hover{
     cursor :pointer;
 }
@@ -114,7 +117,8 @@ header #menu__burger{
     color:var(--clr-text-wh);
     width: 22px;
     height: 22px;
-    display: none;
+    
+    
 }
 
 
@@ -352,43 +356,33 @@ footer h4{
     font-weight: 400;
     
 }
-@media(max-width:500px){ 
-    header #menu__content{
+@media(min-width:500px){
+    header #menu_burger{
         display: none;
     }
-    
-    header #menu__burger{
-        display: block;
-    } 
 }
-    
-    
-    /*header #menu__content ul{
-        flex-direction: row;
+
+@media (max-width: 500px) {
+    header #menu__content {
+        background-color: var(--clr-bg-wht);
+        padding: 1rem;
+        position: absolute;
+        top: -250px;
+        right: 20px;
+        transition: top 0.5s ease-out;
+        
     }
+    header #menu__content  {
+        background-color: var(--clr-bg-wht);
+        padding: 1rem;
+        position: absolute;
+        top: -250px;
+        right: 20px;
+        transition: top 0.5s ease-out;
     }
-    
-    header nav{
-        position: fixed;
-        top:0;
-        right: 0;
-        width: 150px;
-        height: 50vh;
-        background-color: #d7dfe1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform:translateX(100%) ;
-    }
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    header nav ul li {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }*/
-}
+}   
+
+
 
 
 
